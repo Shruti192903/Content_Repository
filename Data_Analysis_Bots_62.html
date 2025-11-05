@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analysis Bots</title>
+    <!-- Load Tailwind CSS for the modern, dark design -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Lucide Icons for clean visuals -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Custom styles to refine the dark aesthetic */
+        body { font-family: 'Inter', sans-serif; }
+        body::-webkit-scrollbar { width: 8px; }
+        body::-webkit-scrollbar-track { background: #0a0a0a; }
+        body::-webkit-scrollbar-thumb { background-color: #4B5563; border-radius: 20px; }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'aether-dark': '#0a0a0a',
+                        'aether-blue': '#3B82F6',
+                        'aether-light-blue': '#60A5FA',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-aether-dark text-gray-100 font-sans min-h-screen">
+
+    <!-- Header & Navigation (Mimics the top bar) -->
+    <header class="sticky top-0 z-10 bg-aether-dark/95 backdrop-blur-sm shadow-lg border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="text-xl font-bold text-aether-blue">Aether AI</div>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#" class="hover:text-aether-light-blue transition duration-150">Home</a>
+                <a href="#" class="hover:text-aether-light-blue transition duration-150">About Us</a>
+                <a href="#" class="text-aether-blue font-semibold">Services</a>
+                <a href="#" class="hover:text-aether-light-blue transition duration-150">Technology</a>
+                <a href="#" class="hover:text-aether-light-blue transition duration-150">Contact</a>
+            </nav>
+            <a href="#" class="bg-aether-blue text-white font-semibold py-2 px-4 rounded-lg shadow-xl hover:bg-aether-light-blue transition duration-150 text-sm">Request a Demo</a>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-24">
+
+        <!-- 1. HERO SECTION (Data Analysis Bots) -->
+        <section class="grid md:grid-cols-2 gap-12 items-start mb-24">
+            <div class="space-y-6">
+                <!-- Main Service Title -->
+                <h1 class="text-5xl lg:text-6xl font-extrabold tracking-tight text-white">
+                    Data Analysis Bots
+                </h1>
+                <!-- Sub-Headline -->
+                <h2 class="text-2xl font-semibold text-gray-300">
+                    Transform Raw Numbers into Actionable Business Stories.
+                </h2>
+                <!-- Hero Description (From Content_Repository.pdf) -->
+                <p class="text-gray-400 text-lg">
+                    Create powerful agents that handle complex data retrieval and visualization, turning **raw numbers into actionable business stories** that accelerate decision-making at every level.
+                </p>
+                <div class="flex space-x-4 pt-4">
+                    <a href="#" class="bg-aether-blue text-white font-bold py-3 px-8 rounded-lg shadow-blue-500/50 hover:bg-aether-light-blue transition duration-300 transform hover:scale-105">
+                        REQUEST DATA BOT DEMO
+                    </a>
+                </div>
+            </div>
+            <!-- Image Placeholder (Mimics the dark box on the right of the NLP section) -->
+            <div class="h-96 w-full bg-gray-900 rounded-xl shadow-2xl flex items-center justify-center border-2 border-aether-blue/20">
+                <i data-lucide="bar-chart-2" class="w-24 h-24 text-aether-blue/50"></i>
+            </div>
+        </section>
+
+        <!-- 2. FEATURE HIGHLIGHT (Automated Reporting & Visualization) -->
+        <section class="grid md:grid-cols-2 gap-12 items-start mb-24">
+            <!-- Icon Placeholder (Mimics the dark box on the left of the CV section) -->
+            <div class="h-96 w-full bg-gray-900 rounded-xl shadow-2xl flex items-center justify-center border-2 border-aether-blue/20">
+                <i data-lucide="line-chart" class="w-24 h-24 text-aether-blue/50"></i>
+            </div>
+            <div class="space-y-6">
+                <!-- Feature Title -->
+                <h2 class="text-4xl font-bold tracking-tight text-white">
+                    Automated Reporting and Visualization
+                </h2>
+                <!-- Feature Description (Custom content focusing on reporting benefits) -->
+                <p class="text-gray-400 text-lg">
+                    Our bots eliminate manual report generation by automatically pulling data from disparate sources, performing statistical analysis, and creating intuitive, custom dashboards tailored to the user's role.
+                </p>
+                <p class="text-sm text-gray-500 italic pt-2">
+                    **Competitive Edge:** Reduce time spent on data preparation and reporting by over **45%**, allowing analysts to focus solely on strategic insight and action.
+                </p>
+                <div class="pt-4">
+                     <a href="#" class="bg-transparent border border-aether-blue text-aether-blue font-semibold py-2 px-4 rounded-lg shadow-xl hover:bg-aether-blue hover:text-white transition duration-150 text-sm">
+                        View Dashboard Gallery
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. CORE AI CAPABILITIES (Pillars adapted for Data Bots)-->
+        <section class="mb-24">
+            <div class="text-center mb-16">
+                <h3 class="text-4xl font-bold tracking-tight text-white mb-3">Core Data Bot Capabilities</h3>
+                <p class="text-lg text-gray-400">
+                    Our platform is built on a foundation of powerful, adaptable AI technologies designed to solve complex business challenges.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Pillar 1: Retrieval & Visualization -->
+                <div class="bg-gray-900 p-6 rounded-xl border-t-4 border-aether-blue shadow-lg hover:shadow-aether-blue/20 transition duration-300">
+                    <i data-lucide="database-zap" class="w-8 h-8 text-aether-blue mb-4"></i>
+                    <h4 class="text-xl font-semibold text-white mb-2">Automated Retrieval & Viz</h4>
+                    <p class="text-gray-400 text-sm">
+                        Handle complex data retrieval and visualization, turning raw numbers into actionable business stories.
+                    </p>
+                </div>
+                <!-- Pillar 2: Natural Language Query -->
+                <div class="bg-gray-900 p-6 rounded-xl border-t-4 border-aether-blue shadow-lg hover:shadow-aether-blue/20 transition duration-300">
+                    <i data-lucide="search-check" class="w-8 h-8 text-aether-blue mb-4"></i>
+                    <h4 class="text-xl font-semibold text-white mb-2">Natural Language Query (NLQ)</h4>
+                    <p class="text-gray-400 text-sm">
+                        Allow non-technical users to query vast datasets using plain English, receiving instant charts and summaries.
+                    </p>
+                </div>
+                <!-- Pillar 3: Predictive Anomaly Alerts -->
+                <div class="bg-gray-900 p-6 rounded-xl border-t-4 border-aether-blue shadow-lg hover:shadow-aether-blue/20 transition duration-300">
+                    <i data-lucide="alert-circle" class="w-8 h-8 text-aether-blue mb-4"></i>
+                    <h4 class="text-xl font-semibold text-white mb-2">Predictive Anomaly Alerts</h4>
+                    <p class="text-gray-400 text-sm">
+                        Bots monitor incoming data streams and alert stakeholders instantly when a KPI deviates from its predicted performance trend.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. FINAL CTA SECTION (Ready to Transform Your Business?) -->
+        <section class="py-16 bg-gray-900 rounded-3xl shadow-2xl border border-gray-800">
+            <div class="max-w-3xl mx-auto text-center space-y-6">
+                <h2 class="text-4xl font-bold text-white">Ready to Transform Your Business?</h2>
+                <p class="text-lg text-gray-300">
+                    Discover how Aether AI can be tailored to your specific needs. Schedule a
+                    free consultation with our AI experts today and unlock your organization's
+                    full potential.
+                </p>
+                <a href="#" class="inline-block bg-aether-blue text-white font-bold py-3 px-10 rounded-lg shadow-lg shadow-blue-500/50 hover:bg-aether-light-blue transition duration-300 transform hover:scale-105 mt-4">
+                    CONTACT SALES
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-aether-dark border-t border-gray-800 mt-12 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm">
+            <div class="text-xl font-bold text-aether-blue mb-2">Aether AI</div>
+            <p class="text-gray-500 mb-4">Innovating the future with intelligent solutions that accelerate business performance.</p>
+            <div class="flex justify-center space-x-4 text-gray-400 mb-4">
+                <a href="#" class="hover:text-aether-blue">Company</a>
+                <a href="#" class="hover:text-aether-blue">About Us</a>
+                <a href="#" class="hover:text-aether-blue">Technology</a>
+                <a href="#" class="hover:text-aether-blue">Services</a>
+                <a href="#" class="hover:text-aether-blue">Contact</a>
+                <a href="#" class="hover:text-aether-blue">Legal</a>
+            </div>
+            <p class="text-gray-600">&copy; 2024 Aether AI. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enterprise AI Roadmap</title>
+    <!-- Load Tailwind CSS for the modern, dark design -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Lucide Icons for clean visuals -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Custom styles to refine the dark aesthetic */
+        body { font-family: 'Inter', sans-serif; }
+        body::-webkit-scrollbar { width: 8px; }
+        body::-webkit-scrollbar-track { background: #0a0a0a; }
+        body::-webkit-scrollbar-thumb { background-color: #4B5563; border-radius: 20px; }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'aether-dark': '#0a0a0a',
+                        'aether-blue': '#3B82F6',
+                        'aether-light-blue': '#60A5FA',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-aether-dark text-gray-100 font-sans min-h-screen">
+
+    <!-- Header & Navigation (Mimics the top bar) -->
+    <header class="sticky top-0 z-10 bg-aether-dark/95 backdrop-blur-sm shadow-lg border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="text-xl font-bold text-aether-blue">Aether AI</div>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#" class="hover:text-aether-light-blue transition duration-150">Home</a>
+                <a href="#" class="hover:text-aether-light-blue transition duration-150">About Us</a>
+                <a href="#" class="text-aether-blue font-semibold">Services</a>
+                <a href="#" class="hover:text-aether-light-blue transition duration-150">Technology</a>
+                <a href="#" class="hover:text-aether-light-blue transition duration-150">Contact</a>
+            </nav>
+            <a href="#" class="bg-aether-blue text-white font-semibold py-2 px-4 rounded-lg shadow-xl hover:bg-aether-light-blue transition duration-150 text-sm">Request a Demo</a>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-24">
+
+        <!-- 1. HERO SECTION (Enterprise AI Roadmap) -->
+        <section class="grid md:grid-cols-2 gap-12 items-start mb-24">
+            <div class="space-y-6">
+                <!-- Main Service Title -->
+                <h1 class="text-5xl lg:text-6xl font-extrabold tracking-tight text-white">
+                    Enterprise AI Roadmap
+                </h1>
+                <!-- Sub-Headline -->
+                <h2 class="text-2xl font-semibold text-gray-300">
+                    Define a Strategic, Multi-Year Plan for Measurable AI Adoption.
+                </h2>
+                <!-- Hero Description (From Content_Repository.pdf) -->
+                <p class="text-gray-400 text-lg">
+                    Develop a strategic, step-by-step plan for AI adoption that connects technology investment
+                    directly with your top **business growth goals** and measurable financial returns.
+                </p>
+                <div class="flex space-x-4 pt-4">
+                    <a href="#" class="bg-aether-blue text-white font-bold py-3 px-8 rounded-lg shadow-blue-500/50 hover:bg-aether-light-blue transition duration-300 transform hover:scale-105">
+                        START STRATEGIC PLANNING
+                    </a>
+                </div>
+            </div>
+            <!-- Image Placeholder (Mimics the dark box on the right of the NLP section) -->
+            <div class="h-96 w-full bg-gray-900 rounded-xl shadow-2xl flex items-center justify-center border-2 border-aether-blue/20">
+                <i data-lucide="compass" class="w-24 h-24 text-aether-blue/50"></i>
+            </div>
+        </section>
+
+        <!-- 2. FEATURE HIGHLIGHT (ROI-Driven Prioritization) -->
+        <section class="grid md:grid-cols-2 gap-12 items-start mb-24">
+            <!-- Icon Placeholder (Mimics the dark box on the left of the CV section) -->
+            <div class="h-96 w-full bg-gray-900 rounded-xl shadow-2xl flex items-center justify-center border-2 border-aether-blue/20">
+                <i data-lucide="trending-up" class="w-24 h-24 text-aether-blue/50"></i>
+            </div>
+            <div class="space-y-6">
+                <!-- Feature Title -->
+                <h2 class="text-4xl font-bold tracking-tight text-white">
+                    ROI-Driven Project Prioritization
+                </h2>
+                <!-- Feature Description (Custom content focusing on project sequencing) -->
+                <p class="text-gray-400 text-lg">
+                    We move beyond simple ideation by scoring potential AI projects based on complexity, required investment, and projected return, ensuring resources are allocated for maximum impact.
+                </p>
+                <p class="text-sm text-gray-500 italic pt-2">
+                    **Competitive Edge:** Our roadmap delivers a clear sequence of projects that build technical capability while ensuring early wins to fund long-term strategic transformation.
+                </p>
+                <div class="pt-4">
+                     <a href="#" class="bg-transparent border border-aether-blue text-aether-blue font-semibold py-2 px-4 rounded-lg shadow-xl hover:bg-aether-blue hover:text-white transition duration-150 text-sm">
+                        View Roadmap Methodology
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. CORE AI CAPABILITIES (Pillars adapted for Consulting)-->
+        <section class="mb-24">
+            <div class="text-center mb-16">
+                <h3 class="text-4xl font-bold tracking-tight text-white mb-3">Core Roadmap Pillars</h3>
+                <p class="text-lg text-gray-400">
+                    Our platform is built on a foundation of powerful, adaptable AI technologies designed to solve complex business challenges.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Pillar 1: Business-AI Alignment -->
+                <div class="bg-gray-900 p-6 rounded-xl border-t-4 border-aether-blue shadow-lg hover:shadow-aether-blue/20 transition duration-300">
+                    <i data-lucide="link" class="w-8 h-8 text-aether-blue mb-4"></i>
+                    <h4 class="text-xl font-semibold text-white mb-2">Business-AI Alignment</h4>
+                    <p class="text-gray-400 text-sm">
+                        Define high-impact AI use cases that directly map to C-level objectives, transforming abstract goals into concrete projects.
+                    </p>
+                </div>
+                <!-- Pillar 2: Capability Assessment -->
+                <div class="bg-gray-900 p-6 rounded-xl border-t-4 border-aether-blue shadow-lg hover:shadow-aether-blue/20 transition duration-300">
+                    <i data-lucide="ruler" class="w-8 h-8 text-aether-blue mb-4"></i>
+                    <h4 class="text-xl font-semibold text-white mb-2">Capability Assessment</h4>
+                    <p class="text-gray-400 text-sm">
+                        Analyze current data infrastructure, technical talent, and governance structure to identify readiness gaps and necessary investments.
+                    </p>
+                </div>
+                <!-- Pillar 3: Phased Implementation Plan -->
+                <div class="bg-gray-900 p-6 rounded-xl border-t-4 border-aether-blue shadow-lg hover:shadow-aether-blue/20 transition duration-300">
+                    <i data-lucide="milestone" class="w-8 h-8 text-aether-blue mb-4"></i>
+                    <h4 class="text-xl font-semibold text-white mb-2">Phased Implementation Plan</h4>
+                    <p class="text-gray-400 text-sm">
+                        Create a multi-phase, risk-managed rollout schedule that ensures systematic integration and continuous value delivery over 12-36 months.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. FINAL CTA SECTION (Ready to Transform Your Business?) -->
+        <section class="py-16 bg-gray-900 rounded-3xl shadow-2xl border border-gray-800">
+            <div class="max-w-3xl mx-auto text-center space-y-6">
+                <h2 class="text-4xl font-bold text-white">Ready to Transform Your Business?</h2>
+                <p class="text-lg text-gray-300">
+                    Discover how Aether AI can be tailored to your specific needs. Schedule a
+                    free consultation with our AI experts today and unlock your organization's
+                    full potential.
+                </p>
+                <a href="#" class="inline-block bg-aether-blue text-white font-bold py-3 px-10 rounded-lg shadow-lg shadow-blue-500/50 hover:bg-aether-light-blue transition duration-300 transform hover:scale-105 mt-4">
+                    CONTACT SALES
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-aether-dark border-t border-gray-800 mt-12 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm">
+            <div class="text-xl font-bold text-aether-blue mb-2">Aether AI</div>
+            <p class="text-gray-500 mb-4">Innovating the future with intelligent solutions that accelerate business performance.</p>
+            <div class="flex justify-center space-x-4 text-gray-400 mb-4">
+                <a href="#" class="hover:text-aether-blue">Company</a>
+                <a href="#" class="hover:text-aether-blue">About Us</a>
+                <a href="#" class="hover:text-aether-blue">Technology</a>
+                <a href="#" class="hover:text-aether-blue">Services</a>
+                <a href="#" class="hover:text-aether-blue">Contact</a>
+                <a href="#" class="hover:text-aether-blue">Legal</a>
+            </div>
+            <p class="text-gray-600">&copy; 2024 Aether AI. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

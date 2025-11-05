@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aether AI | Services Index</title>
+
+  <style>
+    /* Aether AI Dark Theme based on user's custom CSS and Tailwind palette */
+    body {
+      font-family: 'Inter', 'Poppins', sans-serif;
+      background-color: #0a0a0a; /* Deep Dark */
+      color: #e0e0e5;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 1rem 1rem;
+    }
+
+    header h1 {
+      color: #3B82F6; /* Aether Blue */
+      font-size: 2.4rem;
+      margin-bottom: 0.5rem;
+      font-weight: 800;
+      letter-spacing: -0.05em;
+    }
+
+    header p {
+      color: #9da3af;
+      font-size: 1.1rem;
+    }
+
+    main {
+      width: 90%;
+      max-width: 1100px;
+      margin: 2rem 0 4rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    section {
+      background: #111827; /* Darker background for sections */
+      border: 1px solid #1F2937;
+      border-radius: 16px;
+      padding: 1.8rem 2rem;
+      transition: 0.3s ease;
+    }
+
+    section:hover {
+      border-color: #3B82F6; /* Aether Blue on hover */
+      box-shadow: 0 0 16px rgba(59, 130, 246, 0.25);
+      transform: translateY(-2px);
+    }
+
+    h2 {
+      color: #FFFFFF;
+      font-size: 1.35rem;
+      margin-bottom: 1.2rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      border-left: 4px solid #3B82F6; /* Blue accent line */
+      padding-left: 0.8rem;
+    }
+
+    h2 .icon {
+        color: #3B82F6;
+        width: 1.2em;
+        height: 1.2em;
+    }
+
+    .subtopic-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .subtopic {
+      background: #1F2937; /* Even darker background for subtopics */
+      border: 1px solid #2a2a30;
+      border-radius: 12px;
+      padding: 1rem;
+      transition: all 0.25s ease;
+    }
+
+    .subtopic:hover {
+      background: #253140;
+      border-color: #60A5FA;
+      box-shadow: 0 0 10px rgba(96, 165, 250, 0.2);
+    }
+
+    .subtopic a {
+      text-decoration: none;
+      color: #d1d5db;
+      font-size: 0.98rem;
+      font-weight: 500;
+      display: block;
+      transition: color 0.2s;
+    }
+
+    .subtopic a:hover {
+      color: #60A5FA;
+      text-decoration: underline;
+    }
+
+    .cta-section {
+        text-align: center;
+        background: #111827;
+        padding: 3rem 2rem;
+        border-radius: 16px;
+        border: 1px solid #1F2937;
+    }
+
+    .cta-button {
+        display: inline-block;
+        padding: 0.75rem 2rem;
+        background-color: #3B82F6;
+        color: white;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 700;
+        transition: background-color 0.3s;
+    }
+
+    .cta-button:hover {
+        background-color: #60A5FA;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 0;
+      font-size: 0.85rem;
+      color: #6b7280;
+      border-top: 1px solid #1f1f25;
+      width: 100%;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        width: 95%;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      h2 {
+        font-size: 1.25rem;
+      }
+    }
+  </style>
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Aether AI Services Index</h1>
+    <p>Explore all 12 project areas and 48 specialized offerings.</p>
+  </header>
+
+  <main>
+
+    <!-- 1. AI Solutions -->
+    <section>
+      <h2><i data-lucide="brain-circuit" class="icon"></i> 1. AI Solutions</h2>
+      <div class="subtopic-container">
+        <div class="subtopic"><a href="./custom_chatbots_&_RAG_systems_11.html">Custom Chatbots & RAG Systems</a></div>
+        <div class="subtopic"><a href="./predictive_analytics_models_12.html">Predictive Analytics Models</a></div>
+        <div class="subtopic"><a href="./NLP_&_Computer_vision_projects_13.html">NLP & Computer Vision Projects</a></div>
+        <div class="subtopic"><a href="./AI-Powered_Web_&_Mobile_Apps_14.html">AI-Powered Web & Mobile Apps</a></div>
+      </div>
+    </section>
+
+    <!-- 2. Process Automation -->
+    <section>
+      <h2><i data-lucide="workflow" class="icon"></i> 2. Process Automation</h2>
+      <div class="subtopic-container">
+        <div class="subtopic"><a href="./Sales_&_Marketing_Automation_21.html">Sales & Marketing Automation</a></div>
+        <div class="subtopic"><a href="./hr_recruitment_ai_agents_22.html">HR & Recruitment AI Agents</a></div>
+        <div class="subtopic"><a href="./Finance_&_Accounting_Workflows_23.html">Finance & Accounting Workflows</a></div>
+        <div class="subtopic"><a href="./Customer_Support_Automation_24.html">Customer Support Automation</a></div>
+      </div>
+    </section>
+
+    <!-- 3. AI Consulting -->
+    <section>
+      <h2><i data-lucide="compass" class="icon"></i> 3. AI Consulting</h2>
+      <div class="subtopic-container">
+        <div class="subtopic"><a href="./Enterprise_AI_Roadmap_31.html">Enterprise AI Roadmap</a></div>
+        <div class="subtopic"><a href="./Digital_Transformation_Strategy_32.html">Digital Transformation Strategy</a></div>
+        <div class="subtopic"><a href="./AI_Infrastructure_&_MLOps_33.html">AI Infrastructure & MLOps</a></div>
+      </div>
+    </section>
+
+    <!-- 4. Innovation Labs -->
+    <section>
+      <h2><i data-lucide="flask-conical" class="icon"></i> 4. Innovation Labs</h2>
+      <div class="subtopic-container">
+        <div class="subtopic"><a href="./Quantum_AI_Research_&_Development_41.html">Quantum AI R&D</a></div>
+        <div class="subtopic"><a href="./AI_Hackathons.html">AI Hackathons</a></div>
+        <div class="subtopic"><a href="./Capstone_Projects_43.html">Capstone Projects</a></div>
+        <div class="subtopic"><a href="./Startup_Builder_Program_44.html">Startup Builder Program</a></div>
+      </div>
+    </section>
+
+    <!-- 5. Tech Stack -->
+    <section>
+      <h2><i data-lucide="code-square" class="icon"></i> 5. Tech Stack</h2>
+      <div class="subtopic-container">
+        <div class="subtopic"><a href="./Python_51.html">Python</a></div>
+        <div class="subtopic"><a href="./LLamaIndex_52.html">LLamaIndex</a></div>
+        <div class="subtopic"><a href="./TensorFlow_Quantum_53.html">TensorFlow Quantum</a></div>
+        <div class="subtopic"><a href="./Next.js_54.html">Next.js</a></div>
+      </div>
+    </section>
+
+    <!-- 6. AI Agent Development -->
+    <section>
+      <h2><i data-lucide="bot" class="icon"></i> 6. AI Agent Development</h2>
+      <div class="subtopic-container">
+        <div class="subtopic"><a href="./Internal_AI_Assistants_61.html">Internal AI Assistants</a></div>
+        <div class="subtopic"><a href="./Data_Analysis_Bots_62.html">Data Analysis Bots</a></div>
+        <div class="subtopic"><a href="./Workflow_AI_Agents_63.html">Workflow AI Agents</a></div>
+      </div>
+    </section>
+    
+    <!-- 7. TOOLS & INTEGRATIONS -->
+    <!-- <section>
+        <h2><i data-lucide="plug-zap" class="icon"></i> 7. Tools & Integrations</h2>
+        <div class="subtopic-container">
+            <div class="subtopic"><a href="#">n8n (P)</a></div>
+            <div class="subtopic"><a href="#">Odoo ERP Integration (P)</a></div>
+            <div class="subtopic"><a href="#">Data Pipeline Automation (P)</a></div>
+            <div class="subtopic"><a href="#">API Gateway Management (P)</a></div>
+        </div>
+    </section> -->
+
+    <!-- 8. GROWTH SOLUTIONS -->
+    <!-- <section>
+        <h2><i data-lucide="trending-up" class="icon"></i> 8. Growth Solutions</h2>
+        <div class="subtopic-container">
+            <div class="subtopic"><a href="#">AI-Powered Marketing (P)</a></div>
+            <div class="subtopic"><a href="#">Customer Intelligence (P)</a></div>
+            <div class="subtopic"><a href="#">Predictive Analytics for Growth (P)</a></div>
+            <div class="subtopic"><a href="#">Dynamic Pricing Models (P)</a></div>
+        </div>
+    </section> -->
+
+    <!-- 9. PARTNERSHIPS -->
+    <!-- <section>
+        <h2><i data-lucide="users" class="icon"></i> 9. Partnerships</h2>
+        <div class="subtopic-container">
+            <div class="subtopic"><a href="#">For Startups (P)</a></div>
+            <div class="subtopic"><a href="#">For Enterprises (P)</a></div>
+            <div class="subtopic"><a href="#">AI Investment & Venture Support (P)</a></div>
+            <div class="subtopic"><a href="#">Strategic Cloud Alliances (P)</a></div>
+        </div>
+    </section> -->
+
+    <!-- 10. CASE STUDIES -->
+    <!-- <section>
+        <h2><i data-lucide="award" class="icon"></i> 10. Case Studies</h2>
+        <div class="subtopic-container">
+            <div class="subtopic"><a href="#">AI for E-Commerce (P)</a></div>
+            <div class="subtopic"><a href="#">AI for Healthcare (P)</a></div>
+            <div class="subtopic"><a href="case_study_manufacturing.html">AI for Manufacturing</a></div>
+            <div class="subtopic"><a href="#">Quantum-AI Proof of Concepts (P)</a></div>
+        </div>
+    </section> -->
+    
+    <!-- 11. CONSULTING SERVICES -->
+    <!-- <section>
+        <h2><i data-lucide="list-checks" class="icon"></i> 11. Consulting Services</h2>
+        <div class="subtopic-container">
+            <div class="subtopic"><a href="#">Automation Audit (P)</a></div>
+            <div class="subtopic"><a href="implementation_strategy.html">Implementation Strategy</a></div>
+            <div class="subtopic"><a href="#">ROI Optimization (P)</a></div>
+            <div class="subtopic"><a href="#">Change Management (P)</a></div>
+        </div>
+    </section> -->
+
+    <!-- 12. SUCCESS STORIES -->
+    <!-- <section>
+        <h2><i data-lucide="star" class="icon"></i> 12. Success Stories</h2>
+        <div class="subtopic-container">
+            <div class="subtopic"><a href="#">Client Testimonials (P)</a></div>
+            <div class="subtopic"><a href="#">In-Depth Case Studies (P)</a></div>
+            <div class="subtopic"><a href="#">Partner Spotlights (P)</a></div>
+            <div class="subtopic"><a href="#">Analyst Recognition (P)</a></div>
+        </div>
+    </section> -->
+
+    <div class="cta-section">
+        <h3 class="text-3xl font-bold text-white mb-4">Ready to Start Your AI Project?</h3>
+        <p class="text-lg text-gray-300 mb-6">
+            Schedule a free consultation with our AI experts to define your roadmap today.
+        </p>
+        <a href="#" class="cta-button">
+            CONTACT SALES
+        </a>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>© 2024 Aether AI. Innovating the future with intelligent solutions.</p>
+  </footer>
+
+  <script>
+    // Initialize Lucide Icons for all icons defined with data-lucide attribute
+    lucide.createIcons();
+  </script>
+</body>
+</html>
