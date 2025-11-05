@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Studies</title>
+    <!-- Load Tailwind CSS for the modern, dark design -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Lucide Icons for clean visuals -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Custom styles to refine the dark aesthetic */
+        body { font-family: 'Inter', sans-serif; }
+        body::-webkit-scrollbar { width: 8px; }
+        body::-webkit-scrollbar-track { background: #0a0a0a; }
+        body::-webkit-scrollbar-thumb { background-color: #4B5563; border-radius: 20px; }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'aether-dark': '#0a0a0a',
+                        'aether-blue': '#3B82F6',
+                        'aether-light-blue': '#60A5FA',
+                        'aether-card-bg': '#111827', 
+                        'aether-box-bg': '#1e293b', 
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-aether-dark text-gray-100 font-sans min-h-screen">
+
+    <!-- Header & Navigation (Mimics the top bar) -->
+    <header class="sticky top-0 z-10 bg-aether-dark/95 backdrop-blur-sm shadow-lg border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="text-xl font-bold text-aether-blue">Aether AI</div>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#" class="hover:text-aether-light-blue transition duration-150">Home</a>
+                <a href="#" class="hover:text-aether-light-blue transition duration-150">About Us</a>
+                <a href="#" class="text-aether-blue font-semibold">Services</a>
+                <a href="#" class="hover:text-aether-light-blue transition duration-150">Technology</a>
+                <a href="#" class="hover:text-aether-light-blue transition duration-150">Contact</a>
+            </nav>
+            <a href="#" class="bg-aether-blue text-white font-semibold py-2 px-4 rounded-lg shadow-xl hover:bg-aether-light-blue transition duration-150 text-sm">Request a Demo</a>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-24">
+
+        <!-- Case Study Index Header -->
+        <section class="text-center mb-16">
+            <h1 class="text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-4">
+                Client Success Stories
+            </h1>
+            <h2 class="text-2xl font-semibold text-gray-300 max-w-3xl mx-auto">
+                Validated Success: Translating AI Ambition into Measurable Business Outcomes.
+            </h2>
+            <p class="text-gray-400 text-lg mt-4 max-w-4xl mx-auto">
+                Explore in-depth narratives that outline a client challenge, the Aether AI solution, and the **quantifiable positive results achieved**, verified by independent review.
+            </p>
+        </section>
+
+        <!-- 1. FEATURED HERO SECTION A: AI FOR E-COMMERCE (Left Content, Right Image) - Transparent Hero 1 -->
+        <section class="grid md:grid-cols-2 gap-12 items-center mb-12 p-10">
+            <div class="space-y-6">
+                <div class="text-sm font-bold uppercase text-aether-blue">Featured Case Study</div>
+                <h2 class="text-4xl font-extrabold tracking-tight text-white">
+                    AI for E-Commerce
+                </h2>
+                <p class="text-gray-300 text-lg">
+                    **Driving Revenue with Hyper-Personalization and Optimized Pricing.**
+                </p>
+                
+                <div class="bg-aether-blue/10 p-4 rounded-lg flex items-center space-x-3">
+                    <i data-lucide="shopping-cart" class="w-6 h-6 text-aether-blue"></i>
+                    <p class="font-bold text-lg text-white">Key Result: 9% Revenue Increase Per User</p>
+                </div>
+
+                <p class="text-gray-400">
+                    Demonstrating success in increasing sales through personalized recommendations and dynamic pricing, resulting in a **9% revenue increase per user** and higher customer lifetime value.
+                </p>
+                <div class="flex space-x-4 pt-4">
+                    <a href="./AI_for_E_Commerce_101.html" class="bg-aether-blue text-white font-bold py-3 px-8 rounded-lg shadow-blue-500/50 hover:bg-aether-light-blue transition duration-300 transform hover:scale-105">
+                        VIEW FULL CASE STUDY
+                    </a>
+                </div>
+            </div>
+            <!-- Image Placeholder: Reduced bg color for subtle visual break -->
+            <div class="h-96 w-full bg-aether-card-bg rounded-xl flex items-center justify-center shadow-2xl">
+                <i data-lucide="layout-grid" class="w-24 h-24 text-aether-blue/50"></i>
+            </div>
+        </section>
+
+        <!-- 2. FEATURED HERO SECTION B: AI FOR HEALTHCARE (Left Image, Right Content - Inverted Layout) - Transparent Hero 2 -->
+        <section class="grid md:grid-cols-2 gap-12 items-center mb-24 p-10">
+            <!-- Image Placeholder: Reduced bg color for subtle visual break -->
+            <div class="h-96 w-full bg-aether-card-bg rounded-xl flex items-center justify-center order-2 md:order-1 shadow-2xl">
+                <i data-lucide="activity" class="w-24 h-24 text-aether-blue/50"></i>
+            </div>
+            <div class="space-y-6 order-1 md:order-2">
+                <div class="text-sm font-bold uppercase text-aether-blue">Featured Case Study</div>
+                <h2 class="text-4xl font-extrabold tracking-tight text-white">
+                    AI for Healthcare
+                </h2>
+                <p class="text-gray-300 text-lg">
+                    **Accelerating Diagnostics and Improving Patient Outcomes.**
+                </p>
+                
+                <div class="bg-aether-blue/10 p-4 rounded-lg flex items-center space-x-3">
+                    <i data-lucide="heart-pulse" class="w-6 h-6 text-aether-blue"></i>
+                    <p class="font-bold text-lg text-white">Key Result: 40% Faster Diagnostic Review</p>
+                </div>
+
+                <p class="text-gray-400">
+                    Showcasing solutions for predictive diagnostics and administrative automation, driving improved patient outcomes and **40% faster diagnostic review time** for clinicians.
+                </p>
+                <div class="flex space-x-4 pt-4">
+                    <a href="./AI_for_Healthcare_102.html" class="bg-aether-blue text-white font-bold py-3 px-8 rounded-lg shadow-blue-500/50 hover:bg-aether-light-blue transition duration-300 transform hover:scale-105">
+                        VIEW FULL CASE STUDY
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. CORE SUCCESS PILLARS (Matches the 3-pillar section found on service pages) -->
+        <section class="mb-24">
+            <div class="text-center mb-16">
+                <h3 class="text-4xl font-bold tracking-tight text-white mb-3">Core Success Pillars</h3>
+                <p class="text-lg text-gray-400">
+                    Our success stories are built on three fundamental principles of execution and strategic value.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Pillars: Using bg-aether-card-bg for subtle definition, but no visible border -->
+                <!-- Pillar 1: Quantifiable ROI Focus -->
+                <div class="bg-aether-card-bg p-6 rounded-xl shadow-lg hover:shadow-aether-blue/20 transition duration-300">
+                    <i data-lucide="dollar-sign" class="w-8 h-8 text-aether-blue mb-4"></i>
+                    <h4 class="text-xl font-semibold text-white mb-2">Quantifiable ROI Focus</h4>
+                    <p class="text-gray-400 text-sm">
+                        Every project is measured against pre-defined financial and operational targets, ensuring tangible returns on investment.
+                    </p>
+                </div>
+                <!-- Pillar 2: Production-Ready Rigor -->
+                <div class="bg-aether-card-bg p-6 rounded-xl shadow-lg hover:shadow-aether-blue/20 transition duration-300">
+                    <i data-lucide="cpu" class="w-8 h-8 text-aether-blue mb-4"></i>
+                    <h4 class="text-xl font-semibold text-white mb-2">Production-Ready Rigor</h4>
+                    <p class="text-gray-400 text-sm">
+                        Solutions are built using MLOps best practices, guaranteeing scalability, reliability, and security in enterprise environments.
+                    </p>
+                </div>
+                <!-- Pillar 3: Collaborative Partnership -->
+                <div class="bg-aether-card-bg p-6 rounded-xl shadow-lg hover:shadow-aether-blue/20 transition duration-300">
+                    <i data-lucide="handshake" class="w-8 h-8 text-aether-blue mb-4"></i>
+                    <h4 class="text-xl font-semibold text-white mb-2">Collaborative Partnership</h4>
+                    <p class="text-gray-400 text-sm">
+                        Success is achieved through deep collaboration with client teams, ensuring high adoption rates and long-term capability building.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 4. REMAINING CASE STUDY LIST (Grid for easy access) -->
+        <section class="mb-24">
+            <h3 class="text-3xl font-bold tracking-tight text-white mb-8 border-b border-gray-800 pb-4">Explore Our Full Library</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <!-- Card 1: AI for Manufacturing -->
+                <div class="bg-aether-card-bg p-5 rounded-xl shadow-lg hover:shadow-aether-blue/20 transition duration-300 space-y-3">
+                    <i data-lucide="factory" class="w-6 h-6 text-aether-blue"></i>
+                    <h4 class="text-lg font-semibold text-white">AI for Manufacturing</h4>
+                    <div class="text-xs font-medium text-gray-500">Result: 99.9% OEE Achieved</div>
+                    <p class="text-gray-400 text-sm">
+                        Optimizing quality control and throughput with predictive maintenance systems.
+                    </p>
+                    <a href="ai_for_manufacturing.html" class="inline-block text-sm text-aether-light-blue hover:text-white transition duration-150 pt-1 font-medium">
+                        View Details &rarr;
+                    </a>
+                </div>
+
+                <!-- Card 2: Quantum-AI Proof of Concepts -->
+                <div class="bg-aether-card-bg p-5 rounded-xl shadow-lg hover:shadow-aether-blue/20 transition duration-300 space-y-3">
+                    <i data-lucide="atom" class="w-6 h-6 text-aether-blue"></i>
+                    <h4 class="text-lg font-semibold text-white">Quantum-AI POCs</h4>
+                    <div class="text-xs font-medium text-gray-500">Result: Crucial First-Mover Advantage Gained</div>
+                    <p class="text-gray-400 text-sm">
+                        Sharing early, high-impact results from applying advanced quantum algorithms.
+                    </p>
+                    <a href="quantum_ai_proof_of_concepts.html" class="inline-block text-sm text-aether-light-blue hover:text-white transition duration-150 pt-1 font-medium">
+                        View Research Highlights &rarr;
+                    </a>
+                </div>
+                 
+                <!-- Card 3: AI for E-Commerce (Link) -->
+                <div class="bg-aether-card-bg p-5 rounded-xl shadow-lg hover:shadow-aether-blue/20 transition duration-300 space-y-3">
+                    <i data-lucide="shopping-cart" class="w-6 h-6 text-aether-blue mb-2"></i>
+                    <h4 class="text-lg font-semibold text-white">Featured: E-Commerce</h4>
+                    <div class="text-xs font-medium text-gray-500">Result: 9% Revenue Increase Per User</div>
+                    <p class="text-gray-400 text-sm">
+                        Driving revenue with hyper-personalized recommendations and optimized dynamic pricing.
+                    </p>
+                    <a href="ai_for_e_commerce.html" class="inline-block text-sm text-aether-blue font-bold transition duration-150 pt-1">
+                        View Details &rarr;
+                    </a>
+                </div>
+
+                <!-- Card 4: AI for Healthcare (Link) -->
+                <div class="bg-aether-card-bg p-5 rounded-xl shadow-lg hover:shadow-aether-blue/20 transition duration-300 space-y-3">
+                    <i data-lucide="activity" class="w-6 h-6 text-aether-blue mb-2"></i>
+                    <h4 class="text-lg font-semibold text-white">Featured: Healthcare</h4>
+                    <div class="text-xs font-medium text-gray-500">Result: 40% Faster Diagnostic Review</div>
+                    <p class="text-gray-400 text-sm">
+                        Driving improved patient outcomes and operational efficiency in clinical settings.
+                    </p>
+                    <a href="ai_for_healthcare.html" class="inline-block text-sm text-aether-blue font-bold transition duration-150 pt-1">
+                        View Details &rarr;
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. FINAL CTA SECTION (Ready to Transform Your Business?) -->
+        <!-- This section needs a background to stand out, matching the original design -->
+        <section class="py-16 bg-aether-card-bg rounded-3xl shadow-2xl">
+            <div class="max-w-3xl mx-auto text-center space-y-6">
+                <h2 class="text-4xl font-bold text-white">Ready to Achieve Your Own Success Story?</h2>
+                <p class="text-lg text-gray-300">
+                    Schedule a consultation to discuss how Aether AI can define and deliver measurable ROI for your most ambitious projects.
+                </p>
+                <a href="#" class="inline-block bg-aether-blue text-white font-bold py-3 px-10 rounded-lg shadow-lg shadow-blue-500/50 hover:bg-aether-light-blue transition duration-300 transform hover:scale-105 mt-4">
+                    CONTACT SALES
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-aether-dark border-t border-gray-800 mt-12 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm">
+            <div class="text-xl font-bold text-aether-blue mb-2">Aether AI</div>
+            <p class="text-gray-500 mb-4">Innovating the future with intelligent solutions that accelerate business performance.</p>
+            <div class="flex justify-center space-x-4 text-gray-400 mb-4">
+                <a href="#" class="hover:text-aether-blue">Company</a>
+                <a href="#" class="hover:text-aether-blue">About Us</a>
+                <a href="#" class="hover:text-aether-blue">Technology</a>
+                <a href="#" class="hover:text-aether-blue">Services</a>
+                <a href="#" class="hover:text-aether-blue">Contact</a>
+                <a href="#" class="hover:text-aether-blue">Legal</a>
+            </div>
+            <p class="text-gray-600">&copy; 2024 Aether AI. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
